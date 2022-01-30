@@ -1,31 +1,9 @@
-# ACM Research Coding Challenge (Spring 2022)
+For this project, I used the pandas library, the numpy library, and the sklearn library for this project. 
 
-## [](https://github.com/ACM-Research/-DRAFT-Coding-Challenge-S22#no-collaboration-policy)No Collaboration Policy
+For the majority of my project, I followed the steps listed on the website https://www.learndatasci.com/glossary/binary-classification/ but gained a more in depth understanding of what exactly I was doing by looking at https://medium.com/maheshkkumar/implementing-a-binary-classifier-in-python-b69d08d8da21.
+I heavily relied on pandas and gaining a deeper understanding of it so I referred a lot to the w3schools pandas guide(https://www.w3schools.com/python/pandas/default.asp) and the pandas API reference (https://pandas.pydata.org/docs/reference/index.html)
+Furthermore, since the data given wasn't in int values, I got help from a stackoverflow post (https://stackoverflow.com/questions/34007308/linear-regression-analysis-with-string-categorical-features-variables) that detailed how to convert strings/characters to int variables using the pandas .getdummies() function.
 
-**You may not collaborate with anyone on this challenge.**  You  _are_  allowed to use Internet documentation. If you  _do_  use existing code (either from Github, Stack Overflow, or other sources),  **please cite your sources in the README**.
+The only issue I found when testing the code was that in order to have a test case, the test Dataframe needed to have every value for each attribute, something that is kind of unreasonable if you only want to test for a few specific mushroom attributes.
 
-## [](https://github.com/ACM-Research/-DRAFT-Coding-Challenge-S22#submission-procedure)Submission Procedure
-
-Please follow the below instructions on how to submit your answers.
-
-1.  Create a  **public**  fork of this repo and name it  `ACM-Research-Coding-Challenge-S22`. To fork this repo, click the button on the top right and click the "Fork" button.
-
-2.  Clone the fork of the repo to your computer using  `git clone [the URL of your clone]`. You may need to install Git for this (Google it).
-
-3.  Complete the Challenge based on the instructions below.
-
-4.  Submit your solution by filling out this [form](https://acmutd.typeform.com/to/uTpjeA8G).
-
-## Assessment Criteria 
-
-Submissions will be evaluated holistically and based on a combination of effort, validity of approach, analysis, adherence to the prompt, use of outside resources (encouraged), promptness of your submission, and other factors. Your approach and explanation (detailed below) is the most weighted criteria, and partial solutions are accepted. 
-
-## [](https://github.com/ACM-Research/-DRAFT-Coding-Challenge-S22#question-one)Question One
-
-[Binary classification](https://en.wikipedia.org/wiki/Binary_classification) is a type of classification task that labels elements of a set (i.e. dataset) into two different groups. An example of this type of classification would be identifying if people had a specific disease or not based on certain health characteristics. The dataset found in `mushrooms.csv` holds data (22 different characteristics, specifically) about different types of mushrooms, including a mushroom's cap shape, cap surface texture, cap color, bruising, odor, and more. Remember to split the data into test and training sets (you can choose your own percent split). Information about the meaning of the letters under each column can be found within the file `attributelegend.txt`.
-
-**With the file `mushrooms.csv`, use an algorithm of your choice to classify whether a mushroom is poisonous or edible.**
-
-**You may use any programming language you feel most comfortable. We recommend Python because it is the easiest to implement. You're allowed to use any library or API you want to implement this, just document which ones you used in this README file.** Try to complete this as soon as possible.
-
-Regardless if you can or cannot answer the question, provide a short explanation of how you got your solution or how you think it can be solved in your README.md file. However, we highly recommend giving the challenge a try, you just might learn something new!
+On a side note, I completed and ran my code on the virtual environment on the website repl.it because I was unable to import packages for Python on my computer.
